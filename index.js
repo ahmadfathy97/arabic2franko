@@ -33,6 +33,8 @@ let glossary = {
   "و":"w",
   "ي":"y",
   "ؤ": "o",
+  "ئ": "e",
+  "آ": "a",
   "چ": "j",
   "ڤ": "v",
   "ُ": "o", // الضمة
@@ -51,6 +53,8 @@ module.exports = function(arText = ""){
       if(arText[i] === "أ" && arText[i + 1] === "ُ" /*الضمة*/){
         letter = "o";
         continue;
+      } else if(arText[i] === "ّ" /*الشدة*/){
+        letter = glossary[arText[i - 1]];
       } else {
         letter = glossary[arText[i]] ? glossary[arText[i]] : arText[i]
       }
