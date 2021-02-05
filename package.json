@@ -1,0 +1,14 @@
+{
+  "name": "arabic2franko",
+  "version": "1.0.0",
+  "description": "converts the arabic letters to franko",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Ahmad Fathy",
+  "license": "ISC"
+}
