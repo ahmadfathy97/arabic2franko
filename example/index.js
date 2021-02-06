@@ -5,5 +5,6 @@ let
   arr = ["أ", "ح", "م", "د"]
 
 console.log(arabic2franko(text))
+console.log(arabic2franko('أُحِبُ البَطيخ كثيراً'))
 console.log(arabic2franko(arr))
 console.log(arabic2franko())

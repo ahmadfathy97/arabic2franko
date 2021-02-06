@@ -55,6 +55,12 @@ module.exports = function(arText = ""){
         continue;
       } else if(arText[i] === "ّ" /*الشدة*/){
         letter = glossary[arText[i - 1]];
+      } else if(
+        arText[i] === "ة" && arText[i + 1] ==="ٌ" || // التنوين بالضم
+        arText[i] === "ة" && arText[i + 1] ==="ً" || // التنوين بالفتح
+        arText[i] === "ة" && arText[i + 1] ==="ٍ" // التنوين بالكسرر
+      ){
+        letter = "t";
       } else {
         letter = glossary[arText[i]] ? glossary[arText[i]] : arText[i]
       }
