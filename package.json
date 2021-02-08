@@ -1,6 +1,6 @@
 {
   "name": "arabic2franko",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "converts the arabic letters to franko",
   "main": "index.js",
   "directories": {
@@ -9,7 +9,17 @@
   "scripts": {
     "start": "node index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ahmadfathy97/arabic2franko.git"
+  },
   "author": "Ahmad Fathy",
   "license": "ISC",
-  "Keywords": "arabic, franko"
+  "keywords": [
+    "arabic",
+    "franko",
+    "convert",
+    "translate",
+    "translation"
+  ]
 }
